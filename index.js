@@ -8,7 +8,7 @@ app.use(morgan("dev"));
 require("./helpers/initMongodb");
 
 //! build-in middlewares
-// app.use(express.json());
+app.use(express.json());
 
 //! importing our routes
 const AuthRoutes = require("./routes/auth.routes");
